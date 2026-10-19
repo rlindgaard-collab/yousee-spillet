@@ -1721,6 +1721,8 @@ window.SaelgerTestIndhold = {
     '.stest .sg-chip span{text-align:left}',
     '.stest .sg-ans,.stest .st-opt{min-height:56px}',
     '}',
+    /* mobil: SVG-filteret (flækkende streger) på hele scenen kan give blank baggrund ved zoom i mobilbrowsere */
+    '@media (max-width:640px),(hover:none){.stest .sg-wob,.stest .sg-svg.is-zooming .sg-wob{filter:none}}',
     '@media (hover:none){.stest .sg-ans:hover,.stest .st-opt:hover{border-color:transparent}.stest .sg-ans.is-picked:hover{border-color:#1fab2e}.stest .st-btn:hover{transform:none}}'
   ].join('');
 
