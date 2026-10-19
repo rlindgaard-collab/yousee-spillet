@@ -1637,7 +1637,7 @@ window.SaelgerTestIndhold = {
     '.stest .sg-comic-tail.is-on{opacity:1}',
     '.stest .sg-bubble .sg-who{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}',
     '.stest .sg-comic .sg-say{font-family:"Patrick Hand","Comic Neue","Comic Sans MS","Chalkboard SE",cursive;font-size:1.22em;line-height:1.25;font-weight:400;margin:0;color:var(--st-dark)}',
-    '@media (max-width:640px){.stest .sg-comic{max-width:54%;font-size:max(10px,3.1cqw);min-height:3.6em}}',
+    '@media (max-width:640px){.stest .sg-comic{max-width:54%;font-size:max(10px,3.4cqw);min-height:3.6em}}',
     '.stest .sg-panel .sg-bubble{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;padding:0;border:0}.stest .sg-panel .sg-bubble::before{display:none}',
     '.stest .sg-wrap[data-talk="kvinde-router"] .sg-table{opacity:0}',
     '.stest .sg-teaser{margin:-4px -4px 4px;border-radius:14px;overflow:hidden;border:2px solid #2c3324;aspect-ratio:1536/1024}',
@@ -1709,19 +1709,15 @@ window.SaelgerTestIndhold = {
     '.stest .sg-wrap.is-talking .sg-chips{display:none}',
     '.stest .sg-end{display:flex;flex-direction:column;gap:14px;align-items:flex-start}',
     '@media (min-width:900px){.stest.sg-root{max-width:760px}}',
-    /* mobil: stor, læsbar tekst i panelet i stedet for den lille tegneserie-boble, og store tryk-felter under scenen */
+    /* mobil: store tryk-felter under scenen */
     '.stest .sg-spot,.stest .sg-mark,.stest .sg-chip,.stest .sg-ans,.stest .st-btn{-webkit-tap-highlight-color:transparent}',
     '@media (max-width:640px){',
-    '.stest .sg-comic,.stest .sg-comic-tail{display:none!important}',
-    '.stest .sg-panel .sg-bubble{position:relative;width:auto;height:auto;overflow:visible;clip:auto;white-space:normal;padding:16px 18px 18px;border:3px solid var(--st-dark)}',
-    '.stest .sg-panel .sg-bubble::before{display:block}',
-    '.stest .sg-bubble:focus,.stest .sg-bubble:focus-visible{outline:none}',
     '.stest .sg-chips{display:flex;flex-direction:column;align-items:stretch;gap:10px}',
     '.stest .sg-chip{justify-content:flex-start;min-height:52px;border-radius:16px;padding:8px 16px 8px 12px;font-size:16px}',
     '.stest .sg-chip span{text-align:left}',
     '.stest .sg-ans,.stest .st-opt{min-height:56px}',
     '}',
-    /* mobil: SVG-filteret (flækkende streger) på hele scenen kan give blank baggrund ved zoom i mobilbrowsere */
+    /* mobil: SVG-filteret (flimrende streger) på hele scenen kan give blank baggrund ved zoom i mobilbrowsere */
     '@media (max-width:640px),(hover:none){.stest .sg-wob,.stest .sg-svg.is-zooming .sg-wob{filter:none}}',
     '@media (hover:none){.stest .sg-ans:hover,.stest .st-opt:hover{border-color:transparent}.stest .sg-ans.is-picked:hover{border-color:#1fab2e}.stest .st-btn:hover{transform:none}}'
   ].join('');
